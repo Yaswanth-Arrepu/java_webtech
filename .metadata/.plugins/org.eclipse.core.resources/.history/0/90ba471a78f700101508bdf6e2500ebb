@@ -1,0 +1,9 @@
+package com.ibm.enums;
+import com.ibm.enums.types.Apples;
+public class Application
+{
+	public static void main( String[] args )
+	{
+		
+	}
+}

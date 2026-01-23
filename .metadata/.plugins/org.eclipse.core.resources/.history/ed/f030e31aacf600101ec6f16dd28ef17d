@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package com.ibm.client.cui;
+
+/**
+ * 
+ */
+class Point{
+	public int x;
+	public int y;
+}
+public class MainApp {
+	public static void main(String[] args) {
+		System.out.println("Start, inka modalu pedadhama");
+		int num2;
+		int num1;
+		int num3;
+		System.out.println("This is the enddd...")
+	}
+}

@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.ibm.client.cui;
+
+/**
+ * 
+ */
+class Point{
+	public int x;
+	public int y;
+}
+public class MainApp {
+	public static void main(String[] args) {
+		double num;
+		num=3.133333;
+		System.out.println(num)
+	}
+}

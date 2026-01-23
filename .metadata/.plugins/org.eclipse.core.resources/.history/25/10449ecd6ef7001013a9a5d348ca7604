@@ -1,0 +1,12 @@
+package com.ibm.staticfeatures;
+
+import static com.ibm.staticfeatures.tools.MONTH.*;
+import com.ibm.staticfeatures.MONTH;
+public class Application
+{
+	public static void main( String[] args )
+	{
+		MONTH months;
+		months=FEB;
+	}
+}

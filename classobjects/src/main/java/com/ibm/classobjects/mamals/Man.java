@@ -1,0 +1,5 @@
+package com.ibm.classobjects.mamals;
+
+public class Man extends Humans {
+	
+}

@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package com.ibm.client.cui;
+
+/**
+ * 
+ */
+class Point{
+	public int x;
+	public int y;
+}
+public class MainApp {
+	public static void main(String[] args) {
+		String str1,str2;
+		str1="IBM";
+		str2="IBM";
+		System.out.println(str1==str2);
+	}
+}

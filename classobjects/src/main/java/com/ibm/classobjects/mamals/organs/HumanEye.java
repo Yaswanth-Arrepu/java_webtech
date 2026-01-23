@@ -1,0 +1,5 @@
+package com.ibm.classobjects.mamals.organs;
+
+public class HumanEye extends Eye {
+	public float power;
+}
