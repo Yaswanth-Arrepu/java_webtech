@@ -6,5 +6,8 @@ public class PermanentEmployee extends Employee {
 	public void netPay() {
 		System.out.println("Salary");
 	}
+	public void transportation() {
+		System.out.println("Transportation provided");
+	}
 
 }
