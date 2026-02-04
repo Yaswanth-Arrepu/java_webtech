@@ -4,15 +4,58 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<context:annotation-config/>
+	<context:component-scan
+		base-package="com.ibm.Spring.beans,com.ibm.Spring.Services"/>
+	<!-- <bean id="spellChecker" class="com.ibm.Spring.beans.SpellChecker" scope="singleton" 
+		> <property name="id" value="1" /> </bean> <bean id="textEditor" class="com.ibm.Spring.beans.TextEditor" 
+		autowire="constructor" > <constructor-arg ref="spellChecker"></constructor-arg> 
+		</bean> -->
 
-
-	<bean id="spellChecker" class="com.ibm.Spring.beans.SpellChecker" scope="singleton" >
+<!--  	<bean id="spellChecker" class="com.ibm.Spring.beans.SpellChecker">
 		<property name="id" value="1" />
 	</bean>
-	
-		<bean id="textEditor" class="com.ibm.Spring.beans.TextEditor" autowire="constructor" init-method="init" destroy-method="destroy">
-		<!--<property name="spellChecker" ref="spellChecker"></property>-->
-			<constructor-arg ref="spellChecker"></constructor-arg>
-	</bean>
 
+	<bean id="textEditor" class="com.ibm.Spring.beans.TextEditor">
+
+	</bean>-->
+
+	<!-- Defition for javaCollections -->
+	<bean id="javaCollections"
+		class="com.ibm.Spring.beans.JavaCollections">
+		<property name="addressList">
+			<list>
+				<value>India</value>
+				<value>Russia</value>
+				<value>Brazil</value>
+				<value>China</value>
+			</list>
+		</property>
+		<property name="addressSet">
+			<set>
+				<value>India</value>
+				<value>Russia</value>
+				<value>Brazil</value>
+				<value>China</value>
+			</set>
+		</property>
+		<property name="addressMap">
+			<map>
+				<entry key="India" value="1"></entry>
+				<entry key="Russia" value="2"></entry>
+				<entry key="Brazil" value="3"></entry>
+				<entry key="CHina" value="4"></entry>
+			</map>
+		</property>
+		<property name="addressProp">
+			<props>
+				<prop key="One">India</prop>
+				<prop key="Two">Russia</prop>
+				<prop key="Three">Brazil</prop>
+				<prop key="Four">CHina</prop>
+			</props>
+		</property>
+	</bean>
+	<context:annotation-config />
 </beans>
+

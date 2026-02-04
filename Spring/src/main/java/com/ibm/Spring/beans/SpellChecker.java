@@ -1,5 +1,8 @@
 package com.ibm.Spring.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SpellChecker {
 	public SpellChecker() {
 		System.out.println("Inside spell checker constructor.");

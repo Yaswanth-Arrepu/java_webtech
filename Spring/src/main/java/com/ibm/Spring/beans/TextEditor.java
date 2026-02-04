@@ -1,8 +1,12 @@
 package com.ibm.Spring.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+@Component("textEditor")
 public class TextEditor {
 	
 	private SpellChecker spellChecker;
+	
 	
 	public TextEditor(SpellChecker spellChecker) {
 		super();
@@ -15,6 +19,7 @@ public class TextEditor {
 		System.out.println("Inside TextEditor no-args Constructor.");
 	}
 
+	@Autowired
 	public void setSpellChecker(SpellChecker spellChecker) {
 		this.spellChecker = spellChecker;
 	}
